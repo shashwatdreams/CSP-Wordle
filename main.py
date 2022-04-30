@@ -3,7 +3,7 @@ import random
 # How to play the game
 print("Wordle \nGuess the 5-letter Word, you have 6 guesses \n If the word you guessed has a letter in the right spot in the right word, it will be 'G' \n If the word you guessed has a letter of the right word, but in the wrong spot, it will be 'Y' \n If the letter isn't in the correct word, it will be '-' \n\n\n")
 
-# Create a function to get the users guess
+# Create a function to get the users guess 
 def retrieveGuess():
     guess = input("Guess a 5-letter word: ")
     if len(guess) > 5:
