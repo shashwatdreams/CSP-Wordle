@@ -15,7 +15,7 @@ def retrieveGuess():
 def checkGuess(CorrectAnswer, userGuess):
   position = 0
   clue = ""
-  
+
   # Letting the user know if the position of the letter guessed is correct
   for letter in userGuess:
     if letter == CorrectAnswer[position]:
@@ -30,10 +30,12 @@ def checkGuess(CorrectAnswer, userGuess):
 
 
 # Loading all of the words from "words.txt" and adding them to a list
+## The "words.txt" is from The Free Dictionary -- https://www.thefreedictionary.com/5-letter-words.htm
 word_list = []
 word_file = open("words.txt")
 for word in word_file:
   word_list.append(word.strip())
+
 
 # Picking a random word
 answer = random.choice(word_list)
