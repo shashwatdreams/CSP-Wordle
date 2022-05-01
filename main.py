@@ -59,7 +59,6 @@ while num_of_guesses < 6 and not correctly_guessed:
 # End of game messages
 
 if correctly_guessed:
-  print(colored("Congratulations! You guessed the correct word in"),
-        num_of_guesses, "times!")
+  print("Congratulations! You guessed the correct word in", num_of_guesses, "times!")
 else:
   print("You are out of guesses, the correct word is", answer)
