@@ -15,14 +15,14 @@ def retrieveGuess():
 def checkGuess(CorrectAnswer, userGuess):
   position = 0
   clue = ""
-
+  
   # Letting the user know if the position of the letter guessed is correct
   for letter in userGuess:
-    if letter == CorrectAnswer[position]:  # If in correct position, prints "G"
+    if letter == CorrectAnswer[position]:
       clue += "G"
-    elif letter in CorrectAnswer:  # If in the answer, but not in the correct position, prints "Y"
+    elif letter in CorrectAnswer:
       clue += "Y"
-    else:  # If letter isn't in the word, prints "-"
+    else:
       clue += "-"
     position += 1
   print(clue)
@@ -52,6 +52,7 @@ while num_of_guesses < 6 and not correctly_guessed:
   # Letting the user know how many guesses are left
   guesses_left = 6 - num_of_guesses
   print("You have", guesses_left, "guesses left!\n\n")
+
 
 # End of game messages
 
