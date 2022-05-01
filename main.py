@@ -7,7 +7,10 @@ print("Wordle \nGuess the 5-letter Word, you have 6 guesses \n If the word you g
 def retrieveGuess():
     guess = input("Guess a 5-letter word: ")
     if len(guess) > 5:
-        print("\nPlease enter a 5-letter word")
+        print("\nPlease enter a 5-letter word\n")
+        guess = retrieveGuess()
+    elif len(guess) < 5:
+        print("\nPlease enter a 5-letter word\n")
         guess = retrieveGuess()
     return guess
 
